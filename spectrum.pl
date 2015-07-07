@@ -64,6 +64,7 @@ for ( my $i = 0; $i < $#{$spectrum}; $i++ ) {
     my $sp = @{$spectrum}[$i];
     my $freq = $i * $samplerate / $fft_size;
     if ($sp >= $minspectrum ) {
-        printf "%d %6.3f %5.5f\n", $i, $freq, $sp;
+        #printf "%d %6.3f %5.5f\n", $i, $freq, $sp;
+        printf "%6.3f %5.5f\n", $freq, $sp;
     }
 }
